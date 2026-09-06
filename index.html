@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOCTÉA — Weekly Aesthetic Fashion Finds</title>
+<meta name="description" content="Discover weekly fashion finds across goth, soft girl, desi, Y2K, dark feminine and more. Curated fashion discoveries from your favorite online stores.">
+<meta name="theme-color" content="#050308">
+
+<!-- Open Graph -->
+<meta property="og:title" content="NOCTÉA — Weekly Aesthetic Fashion Finds">
+<meta property="og:description" content="Discover weekly fashion finds across goth, soft girl, desi, Y2K, dark feminine and more. Curated fashion discoveries from your favorite online stores.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: UnifrakturCook for the blackletter brand mark, Inter for everything readable -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Decorative background layer: stars + glows. Purely visual, hidden from assistive tech. -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="bg-glow bg-glow--one"></div>
+  <div class="bg-glow bg-glow--two"></div>
+  <div class="bg-stars" id="bgStars"></div>
+</div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a href="#top" class="wordmark" aria-label="NOCTÉA home">
+      <span class="wordmark__glyph" aria-hidden="true">✦</span>
+      <span class="wordmark__text">NOCTÉA</span>
+      <span class="wordmark__glyph" aria-hidden="true">✦</span>
+    </a>
+    <p class="site-header__tagline">Find your aesthetic. Wear the mood.</p>
+    <nav class="site-nav" aria-label="Section navigation">
+      <a href="#drop">Drop</a>
+      <a href="#aesthetics">Aesthetics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__moon" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <h1 class="hero__headline">
+        Find your aesthetic.<br>
+        <span class="hero__headline-sub">Wear the mood.</span>
+      </h1>
+      <p class="hero__desc">A weekly edit of fashion finds for every version of you.</p>
+      <a href="#drop" class="btn btn--primary hero__cta" data-scroll-target="#drop">
+        Explore this week's drop <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================= WEEKLY DROP ============================= -->
+  <section class="drop" id="drop" aria-labelledby="drop-heading">
+    <div class="drop__inner">
+      <p class="drop__eyebrow">Fresh finds. New moods. Every week.</p>
+      <h2 id="drop-heading" class="drop__heading">This week's drop</h2>
+      <p class="drop__range" id="weekRange">&nbsp;</p>
+    </div>
+
+    <!-- ============================= SEARCH ============================= -->
+    <div class="search-wrap">
+      <label class="visually-hidden" for="searchInput">Search products</label>
+      <div class="search-box">
+        <svg class="search-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="6.25" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="12.4" y1="12.4" x2="16.5" y2="16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="search" id="searchInput" placeholder="Search your next obsession…" autocomplete="off">
+      </div>
+    </div>
+
+    <!-- ============================= FILTERS ============================= -->
+    <div class="filters" role="group" aria-label="Filter products by aesthetic">
+      <div class="filters__scroll" id="filterScroll">
+        <button class="pill is-active" data-filter="all" type="button">All</button>
+        <button class="pill" data-filter="goth" type="button">🖤 Goth</button>
+        <button class="pill" data-filter="desi" type="button">🪷 Desi</button>
+        <button class="pill" data-filter="y2k" type="button">💿 Y2K</button>
+      </div>
+
+      <div class="sort-wrap">
+        <label class="visually-hidden" for="sortSelect">Sort products</label>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="trending">Trending</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="product-count" id="productCount" aria-live="polite">&nbsp;</p>
+
+    <!-- ============================= PRODUCT GRID ============================= -->
+    <div class="product-grid" id="productGrid"></div>
+
+    <p class="empty-state" id="emptyState" hidden>No finds yet.<br>Try another mood.</p>
+
+    <div class="load-more-wrap">
+      <button class="btn btn--ghost" id="loadMoreBtn" type="button" hidden>
+        Load more <span aria-hidden="true">✦</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================= AESTHETICS ============================= -->
+  <section class="aesthetics" id="aesthetics" aria-labelledby="aesthetics-heading">
+    <div class="aesthetics__intro">
+      <h2 id="aesthetics-heading" class="section-heading">Your mood.<br>Your aesthetic.</h2>
+      <p class="section-desc">From midnight goth to soft-girl mornings, discover pieces for every version of you.</p>
+    </div>
+    <div class="aesthetic-grid" id="aestheticGrid"></div>
+  </section>
+
+  <!-- ============================= HOW IT WORKS ============================= -->
+  <section class="how" aria-labelledby="how-heading">
+    <h2 id="how-heading" class="section-heading">How it works</h2>
+    <ol class="how__list">
+      <li class="how__item">
+        <span class="how__num" aria-hidden="true">01</span>
+        <h3 class="how__title">Discover</h3>
+        <p class="how__text">Explore this week's curated fashion finds.</p>
+      </li>
+      <li class="how__item">
+        <span class="how__num" aria-hidden="true">02</span>
+        <h3 class="how__title">Find your mood</h3>
+        <p class="how__text">Choose pieces that match your aesthetic.</p>
+      </li>
+      <li class="how__item">
+        <span class="how__num" aria-hidden="true">03</span>
+        <h3 class="how__title">Shop</h3>
+        <p class="how__text">Click Shop Now and visit the retailer through our affiliate link.</p>
+      </li>
+    </ol>
+    <p class="how__note">NOCTÉA does not process payments, orders, shipping or returns. Purchases are completed on the retailer's website.</p>
+  </section>
+
+  <!-- ============================= AFFILIATE DISCLOSURE ============================= -->
+  <section class="disclosure" aria-labelledby="disclosure-heading">
+    <h2 id="disclosure-heading" class="disclosure__heading">Affiliate disclosure</h2>
+    <p class="disclosure__text">Some links on NOCTÉA are affiliate links. If you purchase something through one of these links, NOCTÉA may earn a commission at no additional cost to you.</p>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <p class="site-footer__word">NOCTÉA</p>
+  <p class="site-footer__tagline">Find your aesthetic.<br>Wear the mood.</p>
+  <nav class="site-footer__links" aria-label="Social and contact links">
+    <!-- REPLACE WITH YOUR REAL SOCIAL / CONTACT URLS -->
+    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+    <a href="mailto:hello@example.com">Contact</a>
+  </nav>
+  <p class="site-footer__copy">© 2026 NOCTÉA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
