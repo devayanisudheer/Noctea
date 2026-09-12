@@ -288,6 +288,19 @@ const products = [
     badge: "TRENDING",
     featured: false,
     week: "current"
+  },
+  {
+    id: 19,
+    name: "Kamarbandh Waist Chain Belt",
+    price: 299,
+    oldPrice: 1759,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Kamarbandh+Waist+Chain+Belt", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0hKrXPV7",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
   }
 ];
 
