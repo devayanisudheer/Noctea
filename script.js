@@ -301,6 +301,19 @@ const products = [
     badge: "TRENDING",
     featured: false,
     week: "current"
+  },
+  {
+    id: 20,
+    name: "Metal Kundan Studded Hairband",
+    price: 371,
+    oldPrice: 1767,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Metal+Kundan+Studded+Hairband", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0iA979ja",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
   }
 ];
 
