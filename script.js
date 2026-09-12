@@ -262,6 +262,32 @@ const products = [
     badge: "NEW",
     featured: false,
     week: "current"
+  },
+  {
+    id: 17,
+    name: "Interchangeable Pendant Choker Necklace",
+    price: 199,
+    oldPrice: 1170,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Interchangeable+Pendant+Choker", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0c4jkZA8",
+    badge: "",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 18,
+    name: "Floral Kundan Mathapatti Hairband",
+    price: 299,
+    oldPrice: 598,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Floral+Kundan+Mathapatti", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B026dhaZ7",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
   }
 ];
 
