@@ -145,6 +145,123 @@ const products = [
     badge: "",
     featured: false,
     week: "current"
+  },
+  {
+    id: 8,
+    name: "Long Jhumka Earrings with Ear Chain",
+    price: 686,
+    oldPrice: 2914,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Long+Jhumka+Earrings", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0bIlLBFA",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 9,
+    name: "Traditional Silver Oxidized Bangles Set",
+    price: 389,
+    oldPrice: 2499,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Traditional+Silver+Bangles+Set", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0jiUYo1z",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 10,
+    name: "Set of 15 Gold Plated Stackable Rings",
+    price: 348,
+    oldPrice: 1745,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Gold+Plated+Stackable+Rings", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B04QZbRHS",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 11,
+    name: "Gold Flower Danglers",
+    price: 378,
+    oldPrice: 799,
+    store: "Amazon",
+    category: "desi",
+    image: "https://placehold.co/600x800/6e3cc7/f5f1fa?text=Gold+Flower+Danglers", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0bVv5eLe",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 12,
+    name: "Black Hollow Out Eyelets Y2K Headband",
+    price: 259,
+    oldPrice: 599,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Y2K+Eyelets+Headband", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0gA2llqE",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 13,
+    name: "Futuristic Wraparound Y2K Sunglasses",
+    price: 199,
+    oldPrice: 999,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Futuristic+Y2K+Sunglasses", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B072xrXrq",
+    badge: "TRENDING",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 14,
+    name: "2 Pcs Y2K Star Necklace Set",
+    price: 369,
+    oldPrice: 399,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Y2K+Star+Necklace+Set", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0g5wWJ6r",
+    badge: "",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 15,
+    name: "Star Studded Heart Leather Belt",
+    price: 799,
+    oldPrice: 1499,
+    store: "Amazon",
+    category: "goth",
+    image: "https://placehold.co/600x800/130a20/dccfff?text=Star+Studded+Heart+Belt", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B0d6h2dZW",
+    badge: "",
+    featured: false,
+    week: "current"
+  },
+  {
+    id: 16,
+    name: "Y2K Press On Nails Cherry Blossom Set",
+    price: 359,
+    oldPrice: 718,
+    store: "Amazon",
+    category: "y2k",
+    image: "https://placehold.co/600x800/dccfff/130a20?text=Y2K+Cherry+Blossom+Nails", // REPLACE: paste a hosted URL for the real product photo once you have one
+    affiliateLink: "https://link.amazon/B04CNCOxZ",
+    badge: "NEW",
+    featured: false,
+    week: "current"
   }
 ];
 
